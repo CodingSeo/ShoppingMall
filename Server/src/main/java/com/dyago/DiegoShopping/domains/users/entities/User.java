@@ -8,7 +8,6 @@ import javax.persistence.Entity;
 import java.time.LocalDateTime;
 
 @Entity
-@Getter
 public class User extends BaseEntity {
     private String name;
     private String email;
