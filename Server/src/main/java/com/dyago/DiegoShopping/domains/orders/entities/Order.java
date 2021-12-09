@@ -1,4 +1,4 @@
-package com.dyago.DiegoShopping.domains.products.entities;
+package com.dyago.DiegoShopping.domains.orders.entities;
 
 import lombok.Getter;
 
@@ -9,7 +9,7 @@ import javax.persistence.Id;
 
 @Entity
 @Getter
-public class Products {
+public class Order {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
