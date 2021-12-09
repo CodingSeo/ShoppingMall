@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:4893/security?useSSL=false&useUnicode=true&serverTimezone=Asia/Seoul&rewriteBatchedStatements=true
+    username: root
+    password: root
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+      generate-ddl: false
+  jackson:
+    property-naming-strategy: SNAKE_CASE
+logging:
+  level:
+    root: INFO
+cron-job:
+  scheduling:
+    enable: true
